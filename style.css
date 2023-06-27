@@ -1,0 +1,161 @@
+/* .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+ */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+ 
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+     --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+     --Desaturated-blue: hsl(224, 23%, 55%);
+     --Dark-blue: hsl(223, 47%, 23%);
+ }
+
+ body{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Pale-blue);
+    
+ }
+
+ .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    
+    }
+ 
+
+ .container .content {
+    width: 450px;
+   border-radius: 25px;
+    background-color: white;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100vh;
+    
+ }
+ .container .content .hero{
+    width: 100%;
+ }
+
+ .container .content .info {
+
+    padding: 20px;
+    text-align: center;
+    
+ }
+
+ .container .content .info h2{
+    color: var(--Dark-blue);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+ }
+
+ .container .content .info p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--Desaturated-blue);
+    margin-bottom: 20px;
+
+ }
+
+ .container .content .info .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--Very-pale-blue);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+ }
+ .container .content .info .price .ico-text{
+    width: fit-content;
+        height: fit-content;
+        display: flex;
+            
+            gap: 10px;
+            align-items: center;
+}
+ .container .content .info .price .ico-text img{
+    flex-basis: 1;
+    width: 43px;
+    height: 43px;
+
+ }
+
+ .container .content .info .price .ico-text p{
+    display: inline-block;
+    width: fit-content;
+
+ }
+
+ .container .content .info .price .ico-text p span {
+     font-weight: 900;
+     color: black;
+     
+
+ }
+ .container .content .info .price a:hover {
+    text-decoration: none;
+    color: blueviolet;
+ }
+ .container .content .info .button1 {
+     margin-bottom: 20px;
+     background-color: var(--Bright-blue);
+     color: var(--Very-pale-blue);
+     padding: 20px;
+     margin-right: auto;
+     margin-left: auto;
+     max-width: 80%;
+     border-radius: 10px;
+    box-shadow:4px 7px 21px hsl(245, 75%, 52%, 0.5);
+    transition: 0.3s ease ;
+ }
+ .container .content .info .button1:hover{
+    background-color: hsl(245, 95%, 63%);
+    box-shadow: 4px 7px 21px hsl(245,95%, 63%, 0.5);
+    cursor: pointer;
+ }
+.container .content .info .button2 {
+    color: var(--Desaturated-blue) ;
+    font-weight: 900;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
+    border-radius: 10px;
+
+}
+.container .content .info .button2 p:hover {
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+
+@media (max-width:375px) {
+    .container {
+        width: 325px;
+    }
+        .container .content {
+            width: 300px ;
+        }
+}
